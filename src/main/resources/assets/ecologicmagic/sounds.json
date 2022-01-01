@@ -1,0 +1,9 @@
+{
+  "magic_effect": {
+    "category": "blocks",
+    "subtitle": "ecologicmagic.magic_effect",
+    "sounds": [
+      "ecologicmagic:magic_effect"
+    ]
+  }
+}

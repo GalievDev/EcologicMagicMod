@@ -5,5 +5,12 @@
     "sounds": [
       "ecologicmagic:magic_effect"
     ]
+  },
+  "emaciated_sound": {
+    "category": "ambient",
+    "subtitle":"ecologicmagic.emaciated_sound",
+    "sounds": [
+      "ecologicmagic:emaciated_sound"
+    ]
   }
 }

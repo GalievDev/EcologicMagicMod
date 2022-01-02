@@ -4,6 +4,14 @@
   "item.ecologicmagic.purity_essence": "Эссенсия Чистоты",
   "item.ecologicmagic.prosperity_stone": "Камень процветвания",
   "item.ecologicmagic.ecologic_hoe": "Мотыга эколога",
-  "ecologicmagic.info1": "С этим миром, что то не так, ",
-  "ecologicmagic.info2":"прошлые маги испортили весь мир..."
+  "item.ecologicmagic.ecolog_ring": "§2Кольцо эколога",
+
+  "block.ecologicmagic.emaciated_log": "Истощённое бревно",
+  "block.ecologicmagic.emaciated_wood": "Истощённая древесина",
+  "block.ecologicmagic.emaciated_planks": "Истощённые доски",
+  "block.ecologicmagic.dense_honey_block": "§6Плотный мёд",
+
+  "ecologicmagic.info1": "§8С этим миром, что то",
+  "ecologicmagic.info2": "§8не так, прошлые маги",
+  "ecologicmagic.info3": "§8испортили весь мир..."
 }

@@ -15,6 +15,8 @@ public class ModSoundEvents {
 
     public static final RegistryObject<SoundEvent> MAGIC_EFFECT =
             registerSoundEvent("magic_effect");
+    public static final RegistryObject<SoundEvent> EMACIATED_SOUND =
+            registerSoundEvent("emaciated_sound");
 
     private static RegistryObject<SoundEvent> registerSoundEvent (String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Ecologicmagic.ModId, name)));

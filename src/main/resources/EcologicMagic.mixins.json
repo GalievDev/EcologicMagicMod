@@ -1,0 +1,15 @@
+
+{
+  "required": true,
+  "package": "com.eсologicmagic.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "EcologicMagic.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

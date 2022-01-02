@@ -1,0 +1,17 @@
+{
+  "itemGroup.ecologic_all": "Ecologic Magic",
+  "item.ecologicmagic.ecology_book": "Ecology Book",
+  "item.ecologicmagic.purity_essence": "Purity essence",
+  "item.ecologicmagic.prosperity_stone": "Prosperity stone",
+  "item.ecologicmagic.ecologic_hoe": "Ecologic Hoe",
+  "item.ecologicmagic.ecolog_ring": "§2Ecology Ring",
+
+  "block.ecologicmagic.emaciated_log": "Emaciated Log",
+  "block.ecologicmagic.emaciated_wood": "Emaciated wood",
+  "block.ecologicmagic.emaciated_planks": "Emaciated planks",
+  "block.ecologicmagic.dense_honey_block": "§6Dense honey",
+
+  "ecologicmagic.info1": "§8With this world, something is wrong ",
+  "ecologicmagic.info2":"§8past magicians ruined the whole world...",
+  "ecologicmagic.info3": "§8испортили весь мир..."
+}

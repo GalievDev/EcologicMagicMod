@@ -1,10 +1,7 @@
-package com.eсologicmagic.block.custom;
+package com.eсologicmagic.block;
 
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.BreakableBlock;
+import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
@@ -28,7 +25,7 @@ import net.minecraftforge.common.ToolType;
 public class DenseHoneyBlock extends BreakableBlock {
     protected static final VoxelShape SHAPE = Block.box(1.0D, 0.0D, 1.0D, 15.0D, 15.0D, 15.0D);
     public DenseHoneyBlock () {
-        super (Properties.of(Material.BAMBOO).strength(1f,1f).harvestTool(ToolType.HOE));
+        super (Properties.of(Material.CLAY).strength(1f,1f).harvestTool(ToolType.HOE).speedFactor(0.4F).jumpFactor(0.5F).noOcclusion().sound(SoundType.HONEY_BLOCK));
     }
 
     private static boolean doesEntityDoHoneyBlockSlideEffects(Entity entity) {

@@ -5,12 +5,8 @@ import com.mojang.blaze3d.matrix.MatrixStack;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.TranslationTextComponent;
-import net.minecraft.world.World;
 
 public class BookScreen extends Screen {
     public BookScreen() {

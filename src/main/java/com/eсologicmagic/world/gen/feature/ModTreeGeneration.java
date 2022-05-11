@@ -1,7 +1,6 @@
 package com.eсologicmagic.world.gen.feature;
 
-import com.eсologicmagic.block.trees.EmaciatedTree;
-import com.eсologicmagic.world.biome.EmaciatedBiome;
+import com.eсologicmagic.setup.Registration;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
@@ -18,12 +17,13 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Supplier;
 
+@SuppressWarnings("all")
 public class ModTreeGeneration {
     public static void generateTrees(final BiomeLoadingEvent event) {
         RegistryKey<Biome> key = RegistryKey.create(Registry.BIOME_REGISTRY, event.getName());
         Set<BiomeDictionary.Type> types = BiomeDictionary.getTypes(key);
 
-        if(types.contains(EmaciatedBiome.EMACIATED_BIOME)) {
+        if(types.contains(Registration.EMACIATED_BIOME.get())) {
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
 

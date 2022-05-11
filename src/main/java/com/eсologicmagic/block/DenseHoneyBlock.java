@@ -54,8 +54,6 @@ public class DenseHoneyBlock extends BreakableBlock {
             this.doSlideMovement(p_196262_4_);
             this.maybeDoSlideEffects(p_196262_2_, p_196262_4_);
         }
-
-        super.entityInside(p_196262_1_, p_196262_2_, p_196262_3_, p_196262_4_);
     }
 
     private boolean isSlidingDown(BlockPos p_226935_1_, Entity p_226935_2_) {
@@ -127,7 +125,7 @@ public class DenseHoneyBlock extends BreakableBlock {
         }
     }
 
-///Add sound
+    //Add sound
     //if (world.isClientSide) {
     //  world.playSound(null, pos, ModSoundEvents.MAGIC_EFFECT.get(), SoundCategory.BLOCKS, 1, 1);}
 }

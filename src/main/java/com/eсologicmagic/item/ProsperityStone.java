@@ -1,4 +1,4 @@
-package com.eсologicmagic.item.custom;
+package com.eсologicmagic.item;
 
 
 import net.minecraft.block.BlockState;

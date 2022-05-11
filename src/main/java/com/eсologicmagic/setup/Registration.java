@@ -4,12 +4,14 @@ package com.eсologicmagic.setup;
 import com.eсologicmagic.block.DenseHoneyBlock;
 import com.eсologicmagic.block.OreBlocks;
 import com.eсologicmagic.block.trees.EmaciatedTree;
-import com.eсologicmagic.item.custom.*;
+import com.eсologicmagic.item.*;
+import com.eсologicmagic.world.biome.*;
+
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
-import net.minecraft.potion.Effect;
-import net.minecraft.potion.Potion;
+import net.minecraft.world.biome.Biome;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,10 +23,13 @@ import static com.eсologicmagic.Ecologicmagic.ModId;
 public class Registration {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ModId);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ModId);
+    public static final DeferredRegister<Biome> BIOMES = DeferredRegister.create(ForgeRegistries.BIOMES, ModId);
 
     public static void init() {
-        BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        BLOCKS.register(bus);
+        ITEMS.register(bus);
+        BIOMES.register(bus);
     }
 
     public static final RegistryObject<EcologyBook> ECOLOGY_BOOK = ITEMS.register("ecology_book", EcologyBook::new);
@@ -50,7 +55,10 @@ public class Registration {
     public static final RegistryObject<SaplingBlock> EMACIATED_SAPLING = BLOCKS.register("emaciated_sapling",
             () -> new SaplingBlock(new EmaciatedTree(), AbstractBlock.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.GRASS)));
 
-    public static final RegistryObject<EcologStaff> ECOLOG_STAFF = ITEMS.register("ecolog_staff", EcologStaff::new);
+    public static final RegistryObject<EcologStaff> ECOLOG_STUFF = ITEMS.register("ecolog_staff", EcologStaff::new);
+
+    public static final RegistryObject<Biome> EMACIATED_BIOME = BIOMES.register("emaciated_biome",
+            () -> EmaciatedBiome.makeEmaciatedBiome(() -> ConfigureBuilder.EMACIATED_SURFACE, 0.125f, 0.05f));
 
 }
 

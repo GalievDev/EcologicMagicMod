@@ -1,7 +1,6 @@
 package com.eсologicmagic.world.gen;
 
-
-import com.eсologicmagic.world.biome.EmaciatedBiome;
+import com.eсologicmagic.setup.Registration;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.BiomeDictionary;
@@ -14,7 +13,7 @@ import static net.minecraftforge.common.BiomeDictionary.Type.*;
 
 public class BiomeGen {
     public static void generateBiomes() {
-        addBiome(EmaciatedBiome.EMACIATED_BIOME.get(), BiomeManager.BiomeType.WARM, 60, HOT, DEAD, DRY);
+        addBiome(Registration.EMACIATED_BIOME.get(), BiomeManager.BiomeType.WARM, 60, HOT, DEAD, DRY);
     }
 
     private static void addBiome(Biome biome, BiomeManager.BiomeType type, int weight, BiomeDictionary.Type... types) {

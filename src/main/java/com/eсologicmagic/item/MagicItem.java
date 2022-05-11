@@ -1,4 +1,4 @@
-package com.eсologicmagic.item.custom;
+package com.eсologicmagic.item;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -6,11 +6,11 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.tags.ITag;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.util.Hand;
 
 import java.util.function.Predicate;
 
+@SuppressWarnings("unchecked")
 public abstract class MagicItem extends Item {
     public static final Predicate<ItemStack> MAGIC_ONLY = (magic_only) -> {
         return magic_only.getItem().is((ITag<Item>) EntityType.FIREBALL);

@@ -4,9 +4,6 @@ import com.eсologicmagic.setup.Registration;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
-
-import java.util.function.Supplier;
 
 public enum ModItemTier implements IItemTier {
 

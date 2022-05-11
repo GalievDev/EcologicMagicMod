@@ -1,4 +1,4 @@
-package com.eсologicmagic.item.custom;
+package com.eсologicmagic.item;
 
 
 import com.eсologicmagic.gui.BookScreen;
@@ -9,7 +9,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
-
 
 import static com.eсologicmagic.setup.ModSetup.ECOLOGICALL;
 

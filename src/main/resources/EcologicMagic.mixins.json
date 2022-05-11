@@ -1,10 +1,11 @@
 
 {
   "required": true,
-  "package": "com.eсologicmagic.mixin",
+  "package": "com.valion.ecologicmagic.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "EcologicMagic.refmap.json",
   "mixins": [
+    "BushBlockMixin"
   ],
   "client": [
   ],

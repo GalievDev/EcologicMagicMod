@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.spongepowered.mixin'
 
-group = 'com'
+group = 'com.valiongg'
 version = '1.0-SNAPSHOT'
 
 java {
@@ -113,8 +113,8 @@ dependencies {
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.22'
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.5-4.0.6.8")
-    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.16.5-4.0.6.8:api")
+    implementation fg.deobf("top.theillusivec4.curios:curios-forge:1.16.5-4.0.6.8")
+    implementation fg.deobf("top.theillusivec4.curios:curios-forge:1.16.5-4.0.6.8:api")
 
     annotationProcessor 'org.spongepowered:mixin:0.8:processor'
 }
